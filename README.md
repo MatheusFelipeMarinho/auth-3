@@ -1,5 +1,7 @@
 # Hyperf 认证组件
 
+# This repo adjust compatibility with new version by Hyperf
+
 该组件移植了 Laravel Auth 组件（[illuminate/auth](https://github.com/illuminate/auth )）相对完整的功能特性，除了中间件传参和邮件通知。
 
 * Hyperf 的中间件遵循 PSR-15 的规范，无法使用 Laravel 的方式通过路由向中间件传递值，故在实现上与 Laravel 不同，仅实现了一个基础的身份认证中间件抽象类 `HyperfExt\Auth\Middlewares\AbstractAuthenticateMiddleware`。
@@ -26,7 +28,7 @@ Gate 可以通过注入 `HyperfExt\Auth\Contracts\Access\GateManagerInterface` �
 ## 安装
 
 ```shell script
-composer require hyperf-ext/auth
+composer require matheus-carmo/auth-3
 ```
 
 ## 发布配置
